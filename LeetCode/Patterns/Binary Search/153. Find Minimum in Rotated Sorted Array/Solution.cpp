@@ -5,7 +5,7 @@ public:
         int e=nums.size()-1;
         int mid;
 
-        while(s<=e){
+        while(s<e){
 
              mid=s+(e-s)/2;
 
