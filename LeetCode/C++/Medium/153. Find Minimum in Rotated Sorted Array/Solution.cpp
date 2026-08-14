@@ -17,6 +17,6 @@ public:
             }
         }
 
-        return nums[mid];
+        return nums[s];
     }
 };
