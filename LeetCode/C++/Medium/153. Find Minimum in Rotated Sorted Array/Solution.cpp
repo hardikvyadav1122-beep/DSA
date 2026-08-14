@@ -9,7 +9,7 @@ public:
 
              mid=s+(e-s)/2;
 
-            if(nums[mid]>=nums[e]){
+            if(nums[mid]>nums[e]){
                s=mid+1;
             }
             else {
