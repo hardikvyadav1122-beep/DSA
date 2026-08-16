@@ -3,19 +3,18 @@ public:
     int mySqrt(int x) {
         int low = 0;
         int high = INT_MAX;
-        long long mid;
+       
+        int answer;
         while(low <= high){
-            mid = low + (high-low)/2;
-            if(mid*mid == x){
-                return mid;
-            }
-            else if(mid*mid > x){
-                high = mid-1;
-            }
-            else{
+            long long mid = low + (high-low)/2;
+            if(mid*mid <= x){
+                answer = mid;
                 low = mid+1;
             }
+            else{
+                high = mid-1;
+            } 
         }
-        return mid;
+        return answer;
     }
 };
