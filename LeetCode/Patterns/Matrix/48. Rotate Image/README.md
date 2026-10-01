@@ -1,62 +1,49 @@
 # 📝 48. Rotate Image (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation)
+🔗 [Problem Link](https://leetcode.com/problems/rotate-image/)
 
-![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Plaintext-blue)
+![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
 ### 💡 Tags
-Array, Matrix
+Array, Math, Matrix
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 0 ms
+- **Memory:** 10.3 MB
 
 ---
 
 ### 📜 Problem Description
 
-Given two  `n x n`  binary matrices  `mat`  and  `target` , return  `true`  *if it is possible to make*  `mat`  *equal to*  `target`  *by  **rotating***  `mat`  *in  **90-degree increments** , or*  `false`  *otherwise.*
+You are given an  `n x n`  2D  `matrix`  representing an image, rotate the image by  **90**  degrees (clockwise).
+
+You have to rotate the image  [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) , which means you have to modify the input 2D matrix directly.  **DO NOT**  allocate another 2D matrix and do the rotation.
 
 **Example 1:**
 
- ![image](https://assets.leetcode.com/uploads/2021/05/20/grid3.png) 
+ ![image](https://assets.leetcode.com/uploads/2020/08/28/mat1.jpg) 
 
 ```
-Input: mat = [[0,1],[1,0]], target = [[1,0],[0,1]]
-Output: true
-Explanation: We can rotate mat 90 degrees clockwise to make mat equal target.
+Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+Output: [[7,4,1],[8,5,2],[9,6,3]]
 
 ```
 
 **Example 2:**
 
- ![image](https://assets.leetcode.com/uploads/2021/05/20/grid4.png) 
+ ![image](https://assets.leetcode.com/uploads/2020/08/28/mat2.jpg) 
 
 ```
-Input: mat = [[0,1],[1,1]], target = [[1,0],[0,1]]
-Output: false
-Explanation: It is impossible to make mat equal to target by rotating mat.
-
-```
-
-**Example 3:**
-
- ![image](https://assets.leetcode.com/uploads/2021/05/26/grid4.png) 
-
-```
-Input: mat = [[0,0,0],[0,1,0],[1,1,1]], target = [[1,1,1],[0,1,0],[0,0,0]]
-Output: true
-Explanation: We can rotate mat 90 degrees clockwise two times to make mat equal target.
+Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
+Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
 
 ```
 
 **Constraints:**
 
 	
-- `n == mat.length == target.length`
+- `n == matrix.length == matrix[i].length`
 	
-- `n == mat[i].length == target[i].length`
+- `1 <= n <= 20`
 	
-- `1 <= n <= 10`
-	
-- `mat[i][j]`  and  `target[i][j]`  are either  `0`  or  `1` .
+- `-1000 <= matrix[i][j] <= 1000`
