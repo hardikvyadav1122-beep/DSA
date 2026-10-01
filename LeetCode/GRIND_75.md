@@ -69,7 +69,7 @@ Track your progress on the Grind 75 coding interview preparation list.
 ### 📂 Matrix
 - [ ] Set Matrix Zeroes
 - [ ] Spiral Matrix
-- [x] [Rotate Image](./C++/Medium/48. Rotate Image/)
+- [x] [Rotate Image](./Plaintext/Easy/48. Rotate Image/)
 - [ ] Word Search
 
 ### 📂 String

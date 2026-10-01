@@ -16,7 +16,7 @@ Track your progress on the Striver's SDE Sheet top interview problems.
 - [ ] Maximum Subarray
 - [ ] Sort Colors
 - [ ] Best Time to Buy and Sell Stock
-- [x] [Rotate Image](./C++/Medium/48. Rotate Image/)
+- [x] [Rotate Image](./Plaintext/Easy/48. Rotate Image/)
 - [ ] Merge Intervals
 - [ ] Find the Duplicate Number
 - [ ] Trapping Rain Water
