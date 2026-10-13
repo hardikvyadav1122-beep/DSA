@@ -30,7 +30,7 @@ public:
                 }
             }
             else if(leftA > rightB){
-                high = i-1;
+                high = i;
             }
             else{
                 low = i + 1;
