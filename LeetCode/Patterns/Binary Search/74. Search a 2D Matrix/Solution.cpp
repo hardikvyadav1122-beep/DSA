@@ -7,7 +7,7 @@ public:
         int low = 0;
         int high = m*n-1;
 
-        while(low < high){
+        while(low <= high){
             int mid = low + (high-low)/2;
 
             int row = mid/n;
