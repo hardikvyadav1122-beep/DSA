@@ -8,7 +8,7 @@
 Array, Binary Search, Divide and Conquer, Matrix
 
 ### 🚀 Performance
-- **Runtime:** 165 ms
+- **Runtime:** 57 ms
 - **Memory:** 18.5 MB
 
 ---
