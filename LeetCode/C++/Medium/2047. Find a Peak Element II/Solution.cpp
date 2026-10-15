@@ -6,7 +6,6 @@ public:
 
         int low = 0;
         int high = m-1;
-        vector<int> v(2);
 
         while(low <= high){
             int mid = low + (high-low)/2;
@@ -16,33 +15,19 @@ public:
                     maxcol = i;
                 }
             }
-            if(mid == 0){
-                if(mat[mid][maxcol] > mat[mid+1][maxcol]){
-                    v[0] = mid;
-                    v[1] = maxcol;
-                    break;
-                }
-            }
-            if(mid == m-1){
-                if(mat[mid][maxcol] > mat[mid-1][maxcol]){
-                    v[0] = mid;
-                    v[1] = maxcol;
-                    break;
-                }
-            }
 
-            if(mat[mid][maxcol] > mat[mid-1][maxcol] && mat[mid][maxcol] > mat[mid+1][maxcol]){
-                 v[0] = mid;
-                 v[1] = maxcol;
-                 break;
+            int up = (mid > 0) ? mat[mid-1][maxcol] : -1;
+            int down = (mid < m-1) ? mat[mid+1][maxcol] : -1;
+            if(mat[mid][maxcol] > up && mat[mid][maxcol] > down ){
+                return {mid,maxcol};
             }
-            else if(mat[mid][maxcol] > mat[mid-1][maxcol]){
+            else if(mat[mid][maxcol] > up){
                 low = mid + 1;
             }
             else {
                 high = mid - 1;
             }
         }
-        return v;
+        return {-1,-1};
     }
 };
