@@ -5,29 +5,31 @@ public:
         int n = matrix[0].size();
         vector<int> v(m*n);
         int k = 0;
-        int i = 0;
-        while(k < m*n){
-            int j = i;
-            while(j < n-i){
-                v[k++] = matrix[i][j];
-                j++;
+        int top = 0;
+        int left = 0;
+        int right = n-1;
+        int bottom = m-1;
+        while(left <= right && top <= bottom){
+            for(int i = left; i <= right; i++){
+                v[k++] = matrix[top][i];
             }
-            int temp1 = i+1;
-            while(temp1 < m-i){
-                v[k++] = matrix[temp1][j-1];
-                temp1++;
+            top++;
+            if(top > bottom) break;
+            for(int i = top; i <= bottom; i++){
+                v[k++] = matrix[i][right];
             }
-            int temp2 = j-2;
-            while(temp2 >= i){
-              v[k++] = matrix[temp1-1][temp2];
-              temp2--;
+            right--;
+            if(left > right) break;
+            for(int i = right; i >= left; i--){
+                v[k++] = matrix[bottom][i];
             }
-            while(temp1 >= i+1){
-                v[k++] = matrix[temp1-2][temp2+1];
-                temp1--;
+            bottom--;
+            if(top > bottom) break;
+            for(int i = bottom ; i >= top; i--){
+                v[k++] = matrix[i][left];
             }
-            i++;
+            left++;
         }
-        return v; 
+        return v;
     }
 };
