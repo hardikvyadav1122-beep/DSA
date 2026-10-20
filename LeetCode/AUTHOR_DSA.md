@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs DSA core interview preparation list.
 
 ## Progress
-- **Completed:** 15 / 238 (6.3%)
+- **Completed:** 16 / 238 (6.7%)
 
 ---
 
@@ -234,7 +234,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [x] [Group Anagrams](./C++/Medium/49. Group Anagrams/)
 - [ ] First Unique Character
 - [ ] Longest Palindrome
-- [ ] Sort Characters by Frequency
+- [x] [Sort Characters by Frequency](./C++/Medium/451. Sort Characters By Frequency/)
 - [x] [Isomorphic Strings](./C++/Easy/205. Isomorphic Strings/)
 - [ ] Reconstruct Original Digits from English
 - [ ] Sort Vowels in a String
