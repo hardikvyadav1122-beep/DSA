@@ -189,7 +189,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [ ] Delete Columns to Make Sorted
 - [ ] Reverse String II
 - [ ] Valid Palindrome
-- [x] [Rotate String](./C++/Easy/796. Rotate String/)
+- [x] [Rotate String](./C++/Easy/812. Rotate String/)
 - [ ] First Palindromic String
 - [ ] Reverse Only Letters
 - [ ] Reverse Vowels of a String
