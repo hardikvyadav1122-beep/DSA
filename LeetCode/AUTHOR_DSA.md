@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs DSA core interview preparation list.
 
 ## Progress
-- **Completed:** 14 / 238 (5.9%)
+- **Completed:** 15 / 238 (6.3%)
 
 ---
 
@@ -189,7 +189,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [ ] Delete Columns to Make Sorted
 - [ ] Reverse String II
 - [ ] Valid Palindrome
-- [ ] Rotate String
+- [x] [Rotate String](./C++/Easy/796. Rotate String/)
 - [ ] First Palindromic String
 - [ ] Reverse Only Letters
 - [ ] Reverse Vowels of a String
