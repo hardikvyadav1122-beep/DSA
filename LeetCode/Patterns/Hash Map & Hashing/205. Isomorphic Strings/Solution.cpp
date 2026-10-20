@@ -1,17 +1,15 @@
 class Solution {
 public:
     bool isIsomorphic(string s, string t) {
-        unordered_map<char,char> mp1,mp2;
+        int mp1[256] = {0};
+        int mp2[256] = {0};
 
-        for(int i = 0 ;i < s.size(); i++){
-            if(mp1.find(s[i]) != mp1.end() && mp1[s[i]] != t[i]){
+        for(int i = 0; i < s.size(); i++){
+            if(mp1[s[i]] != mp2[t[i]]){
                 return false;
             }
-            if(mp2.find(t[i]) != mp2.end() && mp2[t[i]] != s[i]){
-                return false;
-            }
-            mp1[s[i]] = t[i];
-            mp2[t[i]] = s[i];
+            mp1[s[i]] = i+1;
+            mp2[t[i]] = i+1;
         }
         return true;
     }
