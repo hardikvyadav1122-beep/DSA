@@ -1,6 +1,6 @@
 # 📝 1111. Maximum Nesting Depth of Two Valid Parentheses Strings (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings)
+🔗 [Problem Link](https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/editorial/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
