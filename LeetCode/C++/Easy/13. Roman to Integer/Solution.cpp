@@ -1,7 +1,7 @@
 class Solution {
 public:
     int romanToInt(string s) {
-        map<char,int> mpp;
+        unordered_map<char,int> mpp;
         mpp['I'] = 1;
         mpp['V'] = 5;
         mpp['X'] = 10;
