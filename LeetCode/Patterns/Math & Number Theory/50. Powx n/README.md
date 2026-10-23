@@ -1,6 +1,6 @@
 # 📝 50. Pow(x, n) (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/powx-n/)
+🔗 [Problem Link](https://leetcode.com/problems/powx-n)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-C++-blue)
 
@@ -8,7 +8,7 @@
 Math, Recursion
 
 ### 🚀 Performance
-- **Runtime:** N/A
+- **Runtime:** Successfully Evaluated
 - **Memory:** N/A
 
 ---
