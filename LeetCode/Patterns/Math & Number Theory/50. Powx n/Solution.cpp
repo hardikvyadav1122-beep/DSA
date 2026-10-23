@@ -1,26 +1,25 @@
 class Solution {
 public:
-double multiply(double x, int n){
-    if(n == 1){
-        return x;
+double p(double x, long long n){
+    n = abs(n);
+    if(n == 0){
+        return 1;
     }
-    return x*multiply(x,n-1);
-}
-double divide(double x, int n){
-    if(n == 1){
-        return double(1/x);
+    double half = p(x,n/2);
+    if(n%2 == 0){
+        return half*half;
     }
-    return double(1/x)*divide(x,n-1);
+    else{
+        return x*half*half;
+    }
 }
     double myPow(double x, int n) {
-        if(n > 0){
-            return multiply(x,n);
-        }
-        else if (n < 0){
-            return divide(x,-n);
+        if(n < 0){
+            double f = p(x,n);
+            return 1/f;
         }
         else{
-            return 1.0;
+            return p(x,n);
         }
     }
 };
