@@ -1,19 +1,26 @@
 class Solution {
 public:
+double multiply(double x, int n){
+    if(n == 1){
+        return x;
+    }
+    return x*multiply(x,n-1);
+}
+double divide(double x, int n){
+    if(n == 1){
+        return double(1/x);
+    }
+    return double(1/x)*divide(x,n-1);
+}
     double myPow(double x, int n) {
-        double ans = 1;
-        int temp = n;
-        if(temp < 0){
-            temp = -1*temp;
+        if(n > 0){
+            return multiply(x,n);
         }
-        for(int i = 0; i < temp; i++){
-            if(n > 0){
-                ans *= x;
-            }
-            else{
-                ans /= x;
-            }
+        else if (n < 0){
+            return divide(x,-n);
         }
-        return ans;
+        else{
+            return 1.0;
+        }
     }
 };
