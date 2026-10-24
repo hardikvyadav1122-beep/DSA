@@ -7,7 +7,7 @@ void solve(vector<int>& v, vector<int>& nums, int k){
         v.push_back(nums[i]);
         ans.push_back(v);
 
-        solve(v,nums,k++);
+        solve(v,nums,i+1);
         
         v.pop_back();
     }
