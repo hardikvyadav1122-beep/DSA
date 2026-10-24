@@ -1,0 +1,17 @@
+    curr.pop_back();
+
+    curr.push_back(')');
+    solve(curr,n);
+    curr.pop_back();
+    solve(curr,n);
+    curr.push_back('(');
+
+    }
+        return;
+        }
+            result.push_back(curr);
+        if(isvalid(curr)){
+    if(curr.length() == 2*n){
+void solve(string& curr, int n){
+
+}
